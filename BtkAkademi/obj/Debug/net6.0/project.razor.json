@@ -18379,6 +18379,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/enesesen/Desktop/BTK-MVC/BtkAkademi/Views/Course/Apply.cshtml",
+      "TargetPath": "Views\\Course\\Apply.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/enesesen/Desktop/BTK-MVC/BtkAkademi/Views/Shared/_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
@@ -18406,6 +18411,11 @@
     {
       "FilePath": "/Users/enesesen/Desktop/BTK-MVC/BtkAkademi/Views/_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/enesesen/Desktop/BTK-MVC/BtkAkademi/Views/Course/Index.cshtml",
+      "TargetPath": "Views\\Course\\Index.cshtml",
       "FileKind": "mvc"
     }
   ],
