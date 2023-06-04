@@ -7,7 +7,9 @@ namespace BtkAkademi.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            var model = Repository.Applications;
+
+            return View(model);
         }
         public IActionResult Apply()
         {
@@ -18,11 +20,22 @@ namespace BtkAkademi.Controllers
         //[ValidateAntiForgeryToken]
         public IActionResult Apply([FromForm] Candidate model)
         {
-            Repository.Add(model);
+            if(Repository.Applications.Any(c => c.Email.Equals(model.Email)))
+            {
+                //Modelin ve model bağlama doğrulamasının durumunu içeren
+                ModelState.AddModelError("", "There is already an application for you.");
+            }
 
-            //return RedirectToAction("Index", "Home");
-            return View("Feedback", model);
+            //Model geçerli ise
+            if(ModelState.IsValid)
+            {
+                Repository.Add(model);
+
+                //return RedirectToAction("Index", "Home");
+                return View("Feedback", model);
+            }
+            //Başarıs ise üzerine dön.
+            return View();
         }
-        
     }
 }
