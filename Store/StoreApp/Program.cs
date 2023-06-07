@@ -3,6 +3,7 @@ using StoreApp.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddRazorPages();
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<RepositoryContext>(options => 
 {
@@ -14,8 +15,10 @@ builder.Services.AddDbContext<RepositoryContext>(options =>
 
 var app = builder.Build();
 
-app.UseRouting();
 app.UseHttpsRedirection();
+app.UseStaticFiles();
+
+app.UseRouting();
 
 app.MapControllerRoute(
     name:"default", 

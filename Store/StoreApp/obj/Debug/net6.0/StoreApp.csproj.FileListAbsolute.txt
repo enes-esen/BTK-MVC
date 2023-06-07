@@ -55,3 +55,5 @@
 /Users/enesesen/Desktop/BTK-MVC/Store/StoreApp/obj/Debug/net6.0/StoreApp.csproj.CopyComplete
 /Users/enesesen/Desktop/BTK-MVC/Store/StoreApp/bin/Debug/net6.0/Npgsql.dll
 /Users/enesesen/Desktop/BTK-MVC/Store/StoreApp/bin/Debug/net6.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll
+/Users/enesesen/Desktop/BTK-MVC/Store/StoreApp/bin/Debug/net6.0/StoreApp.staticwebassets.runtime.json
+/Users/enesesen/Desktop/BTK-MVC/Store/StoreApp/bin/Debug/net6.0/libman.json

@@ -2,6 +2,10 @@
 <div>
     <h2>@Model.ProductName</h2>
     <p>@Model.Price.ToString("c")</p>
-    <a asp-controller="Product" asp-action="Get" asp-route-id="@Model.ProductId">Get Details</a>
-    <hr/>
+    @* <a asp-controller="Product" asp-action="Get" asp-route-id="@Model.ProductId">Get Details</a> *@
+    <a class="btn btn-primary" asp-controller="Product" asp-action="Get" asp-route-id="@Model.ProductId">
+        <i class="fa-solid fa-arrow-right"></i>
+        Get Details
+    </a>
+    <hr />
 </div>
