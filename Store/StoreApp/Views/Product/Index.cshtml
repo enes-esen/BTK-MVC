@@ -1,0 +1,20 @@
+@model List<StoreApp.Models.Product>
+
+@section Footer{
+    <div>
+        Only for Index footer
+    </div>
+}
+
+@foreach (StoreApp.Models.Product prd in Model)
+{
+    @* Burası yerine tagHelper kullanılır *@
+    <partial name="_ProductCard" model="@prd"/>
+@* <div>
+<h3>@prd.ProductName</h3>
+<p>@prd.Price</p>
+<p>
+<a href="/Product/Get/@prd.ProductId">Get Details</a>
+</p>
+</div> *@
+}
