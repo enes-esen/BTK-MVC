@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets/.DS_Store"
     },
     {
+      "Id": "/Users/enesesen/Desktop/BTK-MVC/Store/StoreApp/wwwroot/Images/rs7.jpeg",
+      "PackagePath": "staticwebassets/Images/rs7.jpeg"
+    },
+    {
       "Id": "/Users/enesesen/Desktop/BTK-MVC/Store/StoreApp/wwwroot/css/site.css",
       "PackagePath": "staticwebassets/css/site.css"
     },
@@ -19,6 +23,10 @@
     {
       "Id": "/Users/enesesen/Desktop/BTK-MVC/Store/StoreApp/wwwroot/lib/.DS_Store",
       "PackagePath": "staticwebassets/lib/.DS_Store"
+    },
+    {
+      "Id": "/Users/enesesen/Desktop/BTK-MVC/Store/StoreApp/wwwroot/lib/bootstrap/.DS_Store",
+      "PackagePath": "staticwebassets/lib/bootstrap/.DS_Store"
     },
     {
       "Id": "/Users/enesesen/Desktop/BTK-MVC/Store/StoreApp/wwwroot/lib/bootstrap/css/bootstrap-grid.css",
@@ -563,6 +571,10 @@
     {
       "Id": "/Users/enesesen/Desktop/BTK-MVC/Store/StoreApp/wwwroot/lib/bootstrap/scss/vendor/_rfs.scss",
       "PackagePath": "staticwebassets/lib/bootstrap/scss/vendor/_rfs.scss"
+    },
+    {
+      "Id": "/Users/enesesen/Desktop/BTK-MVC/Store/StoreApp/wwwroot/lib/font-awesome/.DS_Store",
+      "PackagePath": "staticwebassets/lib/font-awesome/.DS_Store"
     },
     {
       "Id": "/Users/enesesen/Desktop/BTK-MVC/Store/StoreApp/wwwroot/lib/font-awesome/css/all.css",
