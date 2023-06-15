@@ -365,6 +365,20 @@
         "runtime": {
           "bin/placeholder/Repositories.dll": {}
         }
+      },
+      "Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Entities": "1.0.0",
+          "Repositories": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Services.dll": {}
+        }
       }
     }
   },
@@ -801,13 +815,19 @@
       "type": "project",
       "path": "../Repositories/Repositories.csproj",
       "msbuildProject": "../Repositories/Repositories.csproj"
+    },
+    "Services/1.0.0": {
+      "type": "project",
+      "path": "../Services/Services.csproj",
+      "msbuildProject": "../Services/Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "Entities >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.0",
-      "Repositories >= 1.0.0"
+      "Repositories >= 1.0.0",
+      "Services >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -841,6 +861,9 @@
             },
             "/Users/enesesen/Desktop/BTK-MVC/Store/Repositories/Repositories.csproj": {
               "projectPath": "/Users/enesesen/Desktop/BTK-MVC/Store/Repositories/Repositories.csproj"
+            },
+            "/Users/enesesen/Desktop/BTK-MVC/Store/Services/Services.csproj": {
+              "projectPath": "/Users/enesesen/Desktop/BTK-MVC/Store/Services/Services.csproj"
             }
           }
         }

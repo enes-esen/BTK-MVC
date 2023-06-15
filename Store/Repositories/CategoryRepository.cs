@@ -1,4 +1,3 @@
-using Entities;
 using Entities.Models;
 using Repositories.Contracts;
 
@@ -9,8 +8,6 @@ namespace Repositories
     {
         public CategoryRepository(RepositoryContext context) : base(context)
         {
-            
         }
     }
-
 }

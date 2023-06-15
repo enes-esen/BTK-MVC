@@ -1,6 +1,5 @@
 using Repositories;
 using Repositories.Contracts;
-using Store.Repositories.Contracts;
 
 namespace Store.Repositories
 {
@@ -11,7 +10,7 @@ namespace Store.Repositories
         private readonly IProductRepository _productRepository;
         private readonly ICategoryRepository _categoryManager;
 
-        public RepositoryManager(RepositoryContext context, IProductRepository productRepository, ICategoryRepository categoryManager = null)
+        public RepositoryManager(RepositoryContext context, IProductRepository productRepository, ICategoryRepository categoryManager)
         {
             _context = context;
             _productRepository = productRepository;

@@ -1,6 +1,5 @@
-using Entities;
 using Microsoft.AspNetCore.Mvc;
-using Store.Repositories.Contracts;
+using Repositories.Contracts;
 
 namespace StoreApp
 {
@@ -18,5 +17,4 @@ namespace StoreApp
             return View(model);
         }
     }
-    
 }

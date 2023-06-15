@@ -1,7 +1,7 @@
 using Entities.Models;
-using Store.Repositories.Contracts;
+using Repositories.Contracts;
 
-namespace Store.Repositories
+namespace Repositories
 {
     public interface IProductRepository : IRepositoryBase<Product>
     {

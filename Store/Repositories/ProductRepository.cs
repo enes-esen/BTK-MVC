@@ -1,7 +1,6 @@
 using Entities.Models;
-using Repositories;
 
-namespace Store.Repositories
+namespace Repositories
 {
     public class ProductRepository : RepositoryBase<Product>, IProductRepository
     {
@@ -15,6 +14,5 @@ namespace Store.Repositories
         {
             return FindByCondition(p => p.ProductId.Equals(id), trackChanges);
         }
-
     }
 }

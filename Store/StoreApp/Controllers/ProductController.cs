@@ -1,21 +1,20 @@
-using Entities.Models;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using Store.Repositories.Contracts;
+using Repositories.Contracts;
+using Services.Contracts;
 
 namespace StoreApp.Controllers
 {
     public class ProductController : Controller
     {
-        private readonly IRepositoryManager _manager;
         private readonly IConfiguration _configuration;
+        //private readonly IRepositoryManager _manager;
+        private readonly IServiceManager _manager;
 
-        public ProductController(IConfiguration configuration, IRepositoryManager manager)
+        public ProductController(IConfiguration configuration, IServiceManager manager)
         {
             _manager = manager;
             _configuration = configuration;
         }
-        
 
         public IActionResult Index()
         {
@@ -33,19 +32,29 @@ namespace StoreApp.Controllers
             //var model = _context.Products.ToList();
             
             //Manager kullanımı
-            var model = _manager.Product.GetAllProducts(false);
+            //var model = _manager.Product.GetAllProducts(false);
+
+            //Service Manager Kullanımı
+            var model = _manager.ProductService.GetAllProducts(false);
             
             return View(model);
         }
-        public IActionResult Get(int id)
+        public IActionResult Get([FromRoute(Name = "id")] int id)
         {
             //Context Kullanımı
             //Product product = _context.Products.First(p => p.ProductId.Equals(id));
 
-            var model = _manager.Product.GetOneProduct(id, false);
+            //Manager kullanımı
+            //var model = _manager.Product.GetOneProduct(id, false);
+
+            //Service Manager kullanımı
+            var model = _manager.ProductService.GetOneProduct(id, false);
+            if(model is null)
+            {
+                throw new Exception("Product not found!");
+            }
 
             return View(model);
         }
-    }
-    
+    }    
 }

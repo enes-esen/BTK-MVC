@@ -1,6 +1,6 @@
 using Repositories.Contracts;
 
-namespace Store.Repositories.Contracts
+namespace Repositories.Contracts
 {
     public interface IRepositoryManager
     {
