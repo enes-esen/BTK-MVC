@@ -16,8 +16,10 @@
 /Users/enesesen/Desktop/BTK-MVC/Store/StoreApp/bin/Debug/net6.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll
 /Users/enesesen/Desktop/BTK-MVC/Store/StoreApp/bin/Debug/net6.0/Entities.dll
 /Users/enesesen/Desktop/BTK-MVC/Store/StoreApp/bin/Debug/net6.0/Repositories.dll
+/Users/enesesen/Desktop/BTK-MVC/Store/StoreApp/bin/Debug/net6.0/Services.dll
 /Users/enesesen/Desktop/BTK-MVC/Store/StoreApp/bin/Debug/net6.0/Entities.pdb
 /Users/enesesen/Desktop/BTK-MVC/Store/StoreApp/bin/Debug/net6.0/Repositories.pdb
+/Users/enesesen/Desktop/BTK-MVC/Store/StoreApp/bin/Debug/net6.0/Services.pdb
 /Users/enesesen/Desktop/BTK-MVC/Store/StoreApp/obj/Debug/net6.0/StoreApp.csproj.AssemblyReference.cache
 /Users/enesesen/Desktop/BTK-MVC/Store/StoreApp/obj/Debug/net6.0/StoreApp.GeneratedMSBuildEditorConfig.editorconfig
 /Users/enesesen/Desktop/BTK-MVC/Store/StoreApp/obj/Debug/net6.0/StoreApp.AssemblyInfoInputs.cache
@@ -40,5 +42,3 @@
 /Users/enesesen/Desktop/BTK-MVC/Store/StoreApp/obj/Debug/net6.0/StoreApp.pdb
 /Users/enesesen/Desktop/BTK-MVC/Store/StoreApp/obj/Debug/net6.0/StoreApp.genruntimeconfig.cache
 /Users/enesesen/Desktop/BTK-MVC/Store/StoreApp/obj/Debug/net6.0/ref/StoreApp.dll
-/Users/enesesen/Desktop/BTK-MVC/Store/StoreApp/bin/Debug/net6.0/Services.dll
-/Users/enesesen/Desktop/BTK-MVC/Store/StoreApp/bin/Debug/net6.0/Services.pdb

@@ -1,25 +1,35 @@
 @model IQueryable<Entities.Models.Product>
 
+<div class="row">
+    <div class="col-md-3">
+        @await Component.InvokeAsync("CategoriesMenu")
+    </div>
+
+    <div class="col-md-9">
+        <div class="row my-3">
+            @foreach (Entities.Models.Product prd in Model)
+            {
+                @* Burası yerine tagHelper kullanılır *@
+                <partial name="_ProductCard" model="@prd" />
+
+                @*
+            <div>
+            <h3>@prd.ProductName</h3>
+            <p>@prd.Price</p>
+            <p>
+            <a href="/Product/Get/@prd.ProductId">Get Details</a>
+            </p>
+            </div>
+            *@
+            }
+        </div>
+    </div>
+</div>
+
 @section Footer{
     <div>
         Only for Index footer
     </div>
 }
 
-<div class="row my-3">
-@foreach (Entities.Models.Product prd in Model)
-{
-    @* Burası yerine tagHelper kullanılır *@
-    <partial name="_ProductCard" model="@prd" />
 
-    @*
-<div>
-<h3>@prd.ProductName</h3>
-<p>@prd.Price</p>
-<p>
-<a href="/Product/Get/@prd.ProductId">Get Details</a>
-</p>
-</div>
-*@
-}
-</div>
