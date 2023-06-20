@@ -9,13 +9,13 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddRazorPages();
 builder.Services.AddControllersWithViews();
-builder.Services.AddDbContext<RepositoryContext>(options => 
+builder.Services.AddDbContext<RepositoryContext>(options =>
 {
     options
     .UseNpgsql(builder
                 .Configuration
                 .GetConnectionString("sqlConnection")
-                ,b => b.MigrationsAssembly("StoreApp"));
+                , b => b.MigrationsAssembly("StoreApp"));
 });
 
 builder.Services.AddScoped<IRepositoryManager, RepositoryManager>();
@@ -35,8 +35,17 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
-app.MapControllerRoute(
-    name:"default", 
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllerRoute(
+        name: "default",
+        pattern: "{controller=Home}/{action=Index}/{id?}"
+    );
+    endpoints.MapAreaControllerRoute(
+        name: "Admin",
+        areaName: "Admin",
+        pattern: "Admin/{controller=Dashboard}/{action=Index}/{id?}"
+    );
+});
 
 app.Run();
