@@ -8,5 +8,6 @@ namespace Services.Contracts
         Product? GetOneProduct(int id, bool trackChangles);
         void CreateProduct(Product product);
         void UpdateOneProdut(Product product);
+        void DeleteOneProduct(int id);
     }
 }
